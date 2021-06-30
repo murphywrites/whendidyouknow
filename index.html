@@ -6,16 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./App.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./index.js"></script>
+    
+
 </head>
 <body>
+  <audio id="chimesound">
+    <source src="https://upload.wikimedia.org/wikipedia/commons/2/28/Windchime.ogg"></source>
+    Your browser isn't invited for super fun audio time.
+  </audio>
+  <div id="gradient">
     <section>
         <div class="title-page">
-              <h1>How do you <span>love</span> yourself?</h1>
+          <!-- make love superscript -->
+              <h1>How do you <span>love</span> yourself?</h1> 
         </div>
       </section>
     <section>
-        <div class="page-2 wavy">
+        <div class="page-2 wavy" id="chimes">
               <p>Chimes sway with <span class="ii1">the night-wind</span> <br />
                   Crawling through <span class="ii2">the window screen</span> <br />
                   Caressing <span class="ii3">the dry skin</span> <br />
@@ -34,8 +43,10 @@
               <div class="drop"></div>
         </div>
       </section>
+      </div>
       <section>
         <div class="page-4" onmousemove="">
+          <!-- change alignment, slightly off center/lower -->
               <p>
                 I feel loved
               </p>

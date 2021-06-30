@@ -10,3 +10,23 @@ function update(e){
 document.addEventListener('mousemove',update)
 document.addEventListener('touchmove',update)
 
+// play countdown sound on scroll when you hit #chimes 
+var played = false;
+
+$(window).scroll(function() {
+  console.log('scroll')
+  var elemTop = $('#chimes').offset().top, 
+  elemHeight = $('#chimes').outerHeight(), 
+  windowHeight = $(window).height(),
+  windowScroll = $(this).scrollTop();
+
+
+  if( windowScroll > (elemTop + elemHeight - windowHeight && played === false) ) {
+    var countdownSound = $('#chimesound')[0]
+    console.log(countdownSound)
+      countdownSound.volume = .01
+      countdownSound.play();
+      played = true;
+  }
+});
+
