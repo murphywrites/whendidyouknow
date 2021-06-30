@@ -10,6 +10,7 @@ function update(e){
 document.addEventListener('mousemove',update)
 document.addEventListener('touchmove',update)
 
+<<<<<<< HEAD
 // play countdown sound on scroll when you hit #chimes 
 var played = false;
 
@@ -30,3 +31,5 @@ $(window).scroll(function() {
   }
 });
 
+=======
+>>>>>>> 89559b964882807203ac3f6dbc0a2aafb521d2da
